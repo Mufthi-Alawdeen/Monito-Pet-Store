@@ -90,11 +90,11 @@ function PetDetailsCard() {
           {/* Breadcrumb Navigation */}
           <div className="flex items-center space-x-2 text-[#667479] mb-4 text-sm md:text-base">
             <a href="/" className="hover:text-gray-700">Home</a>
-            <svg className="h-3.5 w-3.5 text-gray-500 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="h-3.5 w-3.5 text-gray-500 mx-1 lg:mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
             </svg>
             <a href="/" className="hover:text-gray-700">Dog</a>
-            <svg className="h-3.5 w-3.5 text-gray-500 mx-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <svg className="h-3.5 w-3.5 text-gray-500 mx-1 lg:mt-[2px]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="3" d="M9 5l7 7-7 7"></path>
             </svg>
             <span>{pet.breed}</span>

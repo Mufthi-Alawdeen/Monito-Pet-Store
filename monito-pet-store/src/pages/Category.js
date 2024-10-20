@@ -155,10 +155,10 @@ function Category() {
         <div className="flex space-x-8">
           {/* Filter Section */}
           <aside className="w-1/4 mt-1">
-            <h3 className="text-[24px] font-gilroy mb-4 text-[#003459]">Filter</h3>
+            <h3 className="text-[24px] font-gilroy mb-4 text-[#003459]  w-[282px]">Filter</h3>
             {/* Gender Filter */}
-            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]">
-  <h4 className="font-gilroy text-[16px] text-[#00171F] mb-4">Gender</h4>
+            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]  w-[282px]">
+  <h4 className="font-gilroy text-[16px] text-[#00171F] mb-4 ">Gender</h4>
   <div className="flex flex-col space-y-2">
     <label className="flex items-center space-x-3">
       <input 
@@ -183,7 +183,7 @@ function Category() {
 
 
             {/* Color Filter */}
-            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]">
+            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]  w-[282px]">
   <h4 className="font-gilroy text-[16px] text-[#00171F] mb-2">Color</h4>
   <div className="flex flex-col space-y-2">
     {/* Red */}
@@ -266,7 +266,7 @@ function Category() {
 
 
            {/* Price Filter */}
-<div className="mb-8 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)] w-[278px] mt-6">
+<div className="mb-8 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)] w-[282px] mt-6">
   <h4 className="font-gilroy text-[16px] text-[#00171F] mb-2">Price</h4>
   <div className="flex space-x-3 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]">
     {/* Min Price with Stepper */}
@@ -293,7 +293,7 @@ function Category() {
     </div>
 
     {/* Max Price with Stepper */}
-    <div className="relative mb-8 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]">
+    <div className="relative mb-8 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)] w-[250px]">
       <input
         type="number"
         placeholder="Max"
@@ -319,7 +319,7 @@ function Category() {
 
 
             {/* Breed Filter */}
-            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)]">
+            <div className="mb-4 shadow-[0_0.5px_0px_rgba(0,0,0,0.1)] w-[282px]">
               <h4 className="font-gilroy text-[16px] text-[#00171F] mb-4">Breed</h4>
               <div className="flex flex-col space-y-2">
     <label className="flex items-center space-x-3">
@@ -356,7 +356,7 @@ function Category() {
           {/* Pet Cards Section */}
           <section className="w-3/4 ">
             {/* Title and Count */}
-            <div className="flex justify-between items-center mb-3 -ml-[20px]">
+            <div className="flex justify-between items-center mb-3 -ml-[35px]">
             <div className="flex items-end space-x-3">
   <h2 className="text-[24px] font-gilroy text-[#003459] ">Small Dog</h2>
   <p className="text-[#667479] text-[14px] font-gilroymedium leading-none mb-2">{getPetCount()} puppies</p>
@@ -378,7 +378,7 @@ function Category() {
 
             </div>
 
-            <div className="grid grid-cols-3 gap-8 -ml-[20px]">
+            <div className="grid grid-cols-3 gap-8 -ml-[35px]">
               {loading ? (
                 <p>Loading...</p>
               ) : filteredPets.length > 0 ? ( // Use filteredPets for rendering
