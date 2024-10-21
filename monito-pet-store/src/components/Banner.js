@@ -22,11 +22,11 @@ const Banner = ({
     ? "bg-[#FFB775]"
     : "bg-[#003459]";
 
-  const marginLeft = rightContent ? "ml-[20px]" : "ml-[-60px]";
+  const marginLeft = rightContent ? "ml-[20px]" : "ml-[-70px]";
 
   return (
     <section
-      className={`relative flex items-center justify-between w-[1250px] h-[378px] ${marginLeft} py-10 overflow-hidden rounded-[20px] mt-10 ${bannerBackground}`}
+      className={`relative flex items-center justify-between w-[1260px] h-[378px] ${marginLeft} py-10 overflow-hidden rounded-[20px] mt-10 ${bannerBackground}`}
     >
       {/* Conditional Background SVGs */}
       {leftContent ? (
@@ -122,7 +122,7 @@ const Banner = ({
             </div>
 
             {/* Right Column - Text */}
-            <div className="md:w-1/2 text-right mr-[150px]">
+            <div className="md:w-1/2 text-right mr-[120px]">
               {/* Title with SVG icon */}
               <div className="flex items-center justify-end mb-2">
                 <h1 className="text-[52px] font-extrabold text-[#FDFDFD] font-gilroy">

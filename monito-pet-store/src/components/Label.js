@@ -15,10 +15,10 @@ function Labels({
         <div className="flex flex-col md:flex-row items-center text-left w-full md:w-[1300px]">
           {" "}
           {/* Flex container for inline variant */}
-          <h3 className="text-[16px] text-[#000] mb-2 md:mb-0 font-gilroymedium">
+          <h3 className="text-[16px] text-[#000] mb-2 md:mb-0 -ml-[50px] font-gilroymedium">
             {subheading}
           </h3>
-          <h2 className="text-[24px] text-[#003459] mb-1 font-gilroy ml-0 md:ml-2">
+          <h2 className="text-[24px] text-[#003459] mb-1 -ml-[50px] font-gilroy ml-0 md:ml-2">
             {heading}
           </h2>
         </div>
@@ -26,10 +26,10 @@ function Labels({
         <div className="text-left">
           {" "}
           {/* Text aligned to the left for default and textOnly variants */}
-          <h3 className="text-[16px] font-semibold text-[#000] mb-2 font-gilroymedium">
+          <h3 className="text-[16px] font-semibold text-[#000] mb-2 -ml-[50px] font-gilroymedium">
             {subheading}
           </h3>
-          <h2 className="text-[24px] text-[#003459] mb-6 font-gilroy">
+          <h2 className="text-[24px] text-[#003459] -ml-[50px] mb-6 font-gilroy">
             {heading}
           </h2>
         </div>
@@ -38,7 +38,7 @@ function Labels({
       {/* Only show the button for default and inline variants, skip for textOnly */}
       {variant !== "textOnly" && (
         <div
-          className={`mt-4 md:mt-0 mr-0 md:mr-[-30px] ${
+          className={`mt-4 md:mt-0 md:mr-[-90px] ${
             variant === "inline" ? "mb-[12px]" : "mb-[20px]"
           }`}
         >

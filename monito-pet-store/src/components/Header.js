@@ -27,14 +27,14 @@ function Header({ variant = "default" }) {
         </div>
 
         {/* Logo */}
-        <div className="flex-shrink-0 md:mx-auto">
+        <div className="flex-shrink-0 md:mx-8 ">
           {" "}
           {/* Center the logo on mobile */}
           <Logo className="" /> {/* Adjust size for better responsiveness */}
         </div>
 
         {/* Navigation Links (hidden on mobile, visible on larger screens) */}
-        <nav className="ml-12 hidden md:flex space-x-[60px] font-gilroy text-[18px] leading-[24px]">
+        <nav className="ml-6 hidden md:flex space-x-[40px] font-gilroy text-[18px] leading-[24px]">
           <a href="/" className="text-[#003459] hover:text-blue-500">
             Home
           </a>

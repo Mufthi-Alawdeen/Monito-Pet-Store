@@ -83,8 +83,10 @@ function HomePage() {
 
   return (
     <div>
-      <section className="hero-section bg-[linear-gradient(102.87deg,#FCEED5_6.43%,#FCEED5_78.33%,#FFE7BA_104.24%)] py-0 max-h-[101.9vh] relative z-0 overflow-hidden rounded-b-[40px] rounded-tl-none rounded-tr-none">
+      <div>
         <Header />
+      </div>
+      <section className="hero-section bg-[linear-gradient(102.87deg,#FCEED5_6.43%,#FCEED5_78.33%,#FFE7BA_104.24%)] py-0 relative z-0 overflow-hidden rounded-b-[40px] rounded-tl-none rounded-tr-none">
         <div className="absolute left-[calc(50%+50px)] top-[66px] transform -translate-x-1/2">
           <img src={alone} />
         </div>
@@ -95,7 +97,8 @@ function HomePage() {
           <img src={couplefront} />
         </div>
 
-        <div className="container mx-auto flex flex-col md:flex-row items-center justify-between relative z-10">
+        {/* Constrain the max-width of the container */}
+        <div className="container mx-auto max-w-[1400px] ml-[100px] mt-12 flex flex-col md:flex-row items-center justify-between relative z-10">
           {/* Left Column - Text */}
           <div className="md:w-1/2 mt-[-150px] relative text-center md:text-left">
             <div className="relative">
@@ -105,7 +108,7 @@ function HomePage() {
                 style={{
                   width: "635px",
                   height: "635px",
-                  top: "120px",
+                  top: "150px",
                   borderRadius: "99px 120px 120px 120px",
                   backgroundColor: "#003459",
                   transform: "rotate(10.35deg)",
@@ -116,9 +119,9 @@ function HomePage() {
               <div
                 className="absolute animate-slide-left delay-200 left-[620px] hidden md:block"
                 style={{
-                  width: "635px",
+                  width: "625px",
                   height: "635px",
-                  top: "100px",
+                  top: "130px",
                   borderRadius: "99px 99px 20px 10px",
                   backgroundColor: "#F7DBA7",
                   transform: "rotate(25.23deg)",
@@ -164,11 +167,11 @@ function HomePage() {
           </div>
 
           {/* Right Column - Image */}
-          <div className="md:w-1/2 mt-8 md:mt-0 flex justify-center relative">
+          <div className="md:w-1/2 mt-6 md:mt-0 flex justify-center relative mr-[200px]">
             <img
               src={petsImage}
               alt="Person with Dog"
-              className="w-[320px] h-[400px] md:w-[944px] md:h-[680px] object-cover"
+              className="w-[320px] h-[400px] md:w-[700px] md:h-[550px] object-cover" // Added a max-width for larger screens
             />
           </div>
         </div>
@@ -195,14 +198,14 @@ function HomePage() {
       `}</style>
 
       {/* Main Content */}
-      <main className="flex flex-col items-center mr-[-75px] mt-3 ml-[-70px]">
+      <main className="flex flex-col items-center mt-3">
         <section className="w-3/4">
           <Labels
             subheading="What’s New?"
             heading="Take A Look At Some Of Our Pets"
             buttonText="View More"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[80px] -ml-[40px]">
             {pets.length > 0 ? (
               pets.map((pet) => <PetCard key={pet.id} pet={pet} />)
             ) : (
@@ -210,7 +213,7 @@ function HomePage() {
             )}
           </div>
 
-          <div className="ml-[60px] hidden md:block">
+          <div className="ml-[10px] hidden md:block">
             <Banner
               backgroundSvg1={blue}
               backgroundSvg2={berge}
@@ -228,7 +231,7 @@ function HomePage() {
             heading="Our Products"
             buttonText="View More"
           />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[75px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-[135px] ml-[-50px]">
             {products.length > 0 ? (
               products.map((product) => (
                 <ProductCard
@@ -265,7 +268,7 @@ function HomePage() {
             <img src={image7} alt="Image 7" className="w-[116px] h-[72px]" />
           </div>
 
-          <div className="ml-[60px] hidden md:block">
+          <div className="ml-[10px] hidden md:block mb-[70px]">
             <Banner
               backgroundSvg1={chicken1}
               backgroundSvg2={chicken2}
@@ -295,8 +298,8 @@ function HomePage() {
         </section>
 
         <section>
-          <div className="container mx-auto py-8">
-            <div className="flex flex-wrap justify-between w-full ml-0 mt-[-50px]">
+          <div className="container mx-auto py-4">
+            <div className="flex flex-wrap justify-between w-full ml-[10px] mt-[-20px]">
               {articles.map((article, index) => (
                 <div
                   key={index}
