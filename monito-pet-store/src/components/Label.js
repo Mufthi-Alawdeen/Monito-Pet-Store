@@ -38,7 +38,7 @@ function Labels({
       {/* Only show the button for default and inline variants, skip for textOnly */}
       {variant !== "textOnly" && (
         <div
-          className={`mt-4 md:mt-0 md:mr-[-90px] ${
+          className={`mt-4 md:mt-0 md:mr-[-85px] ${
             variant === "inline" ? "mb-[12px]" : "mb-[20px]"
           }`}
         >
