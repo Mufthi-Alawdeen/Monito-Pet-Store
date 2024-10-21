@@ -1,5 +1,5 @@
 // Card.js
-import React from 'react';
+import React from "react";
 
 const Card = ({ image, category, title, description }) => {
   return (

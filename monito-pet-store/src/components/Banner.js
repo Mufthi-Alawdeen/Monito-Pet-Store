@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Buttons"; // Adjust the path to your Button component
+import Button from "./Buttons";
 import { FaRegCirclePlay } from "react-icons/fa6"; // Import icon for the button
 
 const Banner = ({

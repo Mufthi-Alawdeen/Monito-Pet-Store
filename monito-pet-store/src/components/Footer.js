@@ -1,6 +1,6 @@
-import React from 'react';
-import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from 'react-icons/fa';
-import { ReactComponent as Logo } from '../assests/Images/monito.svg'; // Adjust the path as necessary
+import React from "react";
+import { FaFacebook, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { ReactComponent as Logo } from "../assests/Images/monito.svg"; // Adjust the path as necessary
 
 const Footer = () => {
   return (
@@ -9,7 +9,8 @@ const Footer = () => {
         {/* Registration Section */}
         <div className="bg-[#003459] text-white py-8 px-8 rounded-[20px] flex flex-col lg:flex-row justify-between items-center mb-8">
           <h3 className="text-[20px] lg:text-[24px] leading-[30px] lg:leading-[36px] text-center lg:text-left font-gilroy mb-4 lg:mb-0">
-            Register Now So You Don’t Miss <span className="block">Our Programs</span>
+            Register Now So You Don’t Miss{" "}
+            <span className="block">Our Programs</span>
           </h3>
 
           <div className="bg-white p-4 rounded-lg shadow-lg flex items-center flex-col lg:flex-row w-full lg:w-[707px]">
@@ -28,10 +29,18 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center mb-8">
           {/* Navigation Links */}
           <div className="flex justify-center space-x-8 lg:space-x-10 text-[#003459] font-gilroymedium mb-6 lg:mb-0">
-            <a href="/" className="hover:text-gray-600">Home</a>
-            <a href="/" className="hover:text-gray-600">Category</a>
-            <a href="/" className="hover:text-gray-600">About</a>
-            <a href="/" className="hover:text-gray-600">Contact</a>
+            <a href="/" className="hover:text-gray-600">
+              Home
+            </a>
+            <a href="/" className="hover:text-gray-600">
+              Category
+            </a>
+            <a href="/" className="hover:text-gray-600">
+              About
+            </a>
+            <a href="/" className="hover:text-gray-600">
+              Contact
+            </a>
           </div>
 
           {/* Social Icons */}
@@ -68,8 +77,12 @@ const Footer = () => {
 
           {/* Right Side - Links */}
           <div className="text-center lg:text-right text-[#667479] text-gilroymedium">
-            <a href="/" className="hover:text-gray-600 mx-2">Terms of Service</a>
-            <a href="/" className="hover:text-gray-600 mx-2">Privacy Policy</a>
+            <a href="/" className="hover:text-gray-600 mx-2">
+              Terms of Service
+            </a>
+            <a href="/" className="hover:text-gray-600 mx-2">
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>

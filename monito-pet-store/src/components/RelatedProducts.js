@@ -1,6 +1,6 @@
-import React from 'react';
-import PetCard from './PetCard'; // Reuse the PetCard component
-import Labels from './Label';
+import React from "react";
+import PetCard from "./PetCard"; // Reuse the PetCard component
+import Labels from "./Label";
 
 function RelatedProducts({ pets }) {
   return (
@@ -8,9 +8,9 @@ function RelatedProducts({ pets }) {
       <div className="max-w-7xl w-full">
         {/* Labels only visible for large screens and up */}
         <div className="hidden lg:block">
-          <Labels 
-            subheading="What’s New?" 
-            heading="See More Puppies" 
+          <Labels
+            subheading="What’s New?"
+            heading="See More Puppies"
             variant="textOnly"
           />
         </div>

@@ -3,8 +3,8 @@ import Button from "./Buttons";
 import { FiSearch, FiMenu } from "react-icons/fi"; // Import FiMenu for the mobile menu icon
 import { ReactComponent as Logo } from "../assests/Images/monito.svg"; // Adjust the path as necessary
 import { ReactComponent as Rec1 } from "../assests/Images/Rectangle 9.svg";
-import { ReactComponent as DropdownIcon } from "../assests/Images/dropdown.svg"; // Adjust the path to your dropdown SVG
-import { ReactComponent as Star } from "../assests/Images/star.svg"; // Adjust the path to your star SVG if needed
+import { ReactComponent as DropdownIcon } from "../assests/Images/dropdown.svg"; // Adjust the path to dropdown SVG
+import { ReactComponent as Star } from "../assests/Images/star.svg"; // Adjust the path to  star SVG if needed
 
 function Header({ variant = "default" }) {
   return (

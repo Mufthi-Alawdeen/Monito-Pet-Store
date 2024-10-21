@@ -4,7 +4,7 @@ import Footer from "../components/Footer";
 import PetCard from "../components/PetCard";
 import ProductCard from "../components/ProductCard";
 import Button from "../components/Buttons";
-import petsImage from "../assests/Images/image1.png"; // Use your local image
+import petsImage from "../assests/Images/image1.png"; // Use local image
 import rec2 from "../assests/Images/Rectangle 3.svg"; // Import rec2 SVG
 import { FaRegCirclePlay } from "react-icons/fa6";
 import Labels from "../components/Label";

@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { FaArrowLeft, FaArrowRight } from 'react-icons/fa'; // Using FontAwesome icons for arrows
+import React, { useState } from "react";
+import { FaArrowLeft, FaArrowRight } from "react-icons/fa"; // Using FontAwesome icons for arrows
 
 const Pagination = ({ totalPages, currentPage, onPageChange }) => {
   const generatePageNumbers = () => {
@@ -13,11 +13,26 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
     } else {
       // If more than 5 pages, add ellipsis and keep first, last, and nearby pages visible
       if (currentPage <= 3) {
-        pages = [1, 2, 3, 4, '...', totalPages];
+        pages = [1, 2, 3, 4, "...", totalPages];
       } else if (currentPage >= totalPages - 2) {
-        pages = [1, '...', totalPages - 3, totalPages - 2, totalPages - 1, totalPages];
+        pages = [
+          1,
+          "...",
+          totalPages - 3,
+          totalPages - 2,
+          totalPages - 1,
+          totalPages,
+        ];
       } else {
-        pages = [1, '...', currentPage - 1, currentPage, currentPage + 1, '...', totalPages];
+        pages = [
+          1,
+          "...",
+          currentPage - 1,
+          currentPage,
+          currentPage + 1,
+          "...",
+          totalPages,
+        ];
       }
     }
 
@@ -30,7 +45,11 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
     <div className="flex items-center space-x-4">
       {/* Left Arrow */}
       <button
-        className={`p-2 rounded-[15px] ${currentPage === 1 ? 'text-[#003459] cursor-not-allowed' : 'text-[#003459]'}`}
+        className={`p-2 rounded-[15px] ${
+          currentPage === 1
+            ? "text-[#003459] cursor-not-allowed"
+            : "text-[#003459]"
+        }`}
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
@@ -43,11 +62,11 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
           key={index}
           className={`px-3 py-1 font-gilroy rounded-[8px] text-[18px] ${
             page === currentPage
-              ? 'bg-[#003459] text-[#FDFDFD]'
-              : 'text-[#003459] hover:bg-gray-200'
+              ? "bg-[#003459] text-[#FDFDFD]"
+              : "text-[#003459] hover:bg-gray-200"
           }`}
-          onClick={() => typeof page === 'number' && onPageChange(page)}
-          disabled={typeof page !== 'number'}
+          onClick={() => typeof page === "number" && onPageChange(page)}
+          disabled={typeof page !== "number"}
         >
           {page}
         </button>
@@ -55,7 +74,11 @@ const Pagination = ({ totalPages, currentPage, onPageChange }) => {
 
       {/* Right Arrow */}
       <button
-        className={`p-2 rounded-[8px] ${currentPage === totalPages ? 'text-[#FDFDFD] cursor-not-allowed' : 'text-[#003459]'}`}
+        className={`p-2 rounded-[8px] ${
+          currentPage === totalPages
+            ? "text-[#FDFDFD] cursor-not-allowed"
+            : "text-[#003459]"
+        }`}
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >

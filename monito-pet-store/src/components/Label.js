@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "./Buttons"; // Ensure the path to your Button component is correct
+import Button from "./Buttons"; // Ensure the path to Button component is correct
 import { ReactComponent as Next } from "../assests/Images/next.svg";
 
 function Labels({
